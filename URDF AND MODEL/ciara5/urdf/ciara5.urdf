@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ciara5">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-6.70282971988945E-35 1.75434327219908E-18 0.0352793425372839"
+        rpy="0 0 0" />
+      <mass
+        value="0.397081603450482" />
+      <inertia
+        ixx="0.000390436341830341"
+        ixy="5.38770077391158E-37"
+        ixz="-1.19574527113186E-36"
+        iyy="0.000390436341830341"
+        iyz="1.03212048564036E-20"
+        izz="0.000329375875681925" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_0">
+    <inertial>
+      <origin
+        xyz="0.00425850389206899 0.00133995144441386 0.0910531330654277"
+        rpy="0 0 0" />
+      <mass
+        value="0.321308800551652" />
+      <inertia
+        ixx="0.000288220170687884"
+        ixy="-7.8870075385222E-06"
+        ixz="7.27371175221573E-08"
+        iyy="0.00031080102044461"
+        iyz="2.29116239120416E-08"
+        izz="0.00018993783104218" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_0"
+    type="revolute">
+    <origin
+      xyz="0 0 0.041"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="1.9613"
+      velocity="3" />
+  </joint>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-1.01637347407526E-18 0.0810000587552482 0.0719627676881317"
+        rpy="0 0 0" />
+      <mass
+        value="0.705361988056164" />
+      <inertia
+        ixx="0.00308788217416799"
+        ixy="5.05762465393326E-10"
+        ixz="1.52549337040491E-10"
+        iyy="0.000374499963219962"
+        iyz="1.80217406086646E-10"
+        izz="0.00306719737007776" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.091"
+      rpy="1.5708 0 1.8757" />
+    <parent
+      link="link_0" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="3.9227"
+      velocity="3" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="9.10729824887824E-18 0.0810000588863843 0.0620318736990104"
+        rpy="0 0 0" />
+      <mass
+        value="0.703791191729369" />
+      <inertia
+        ixx="0.00307604332382897"
+        ixy="3.72159665402518E-10"
+        ixz="4.17407265977839E-10"
+        iyy="0.000372967730172223"
+        iyz="-2.08097620708596E-19"
+        izz="0.00305687173777506" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.162 0.072"
+      rpy="-3.1416 0 -3.1416" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.268"
+      upper="2.268"
+      effort="3.9227"
+      velocity="3" />
+  </joint>
+  <link
+    name="end">
+    <inertial>
+      <origin
+        xyz="1.5163138553792E-08 0.00686788029864893 -0.0310555094953993"
+        rpy="0 0 0" />
+      <mass
+        value="0.233953288068619" />
+      <inertia
+        ixx="0.000165746967648986"
+        ixy="-1.5321170176442E-10"
+        ixz="-1.41288194590639E-10"
+        iyy="0.000129233637195583"
+        iyz="-1.08280611221715E-07"
+        izz="0.000155408452097507" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/end.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ciara5/meshes/end.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 0.162 -0.031"
+      rpy="-3.1416 0 -3.1416" />
+    <parent
+      link="link_2" />
+    <child
+      link="end" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.919"
+      upper="1.919"
+      effort="0.98067"
+      velocity="3" />
+  </joint>
+</robot>
